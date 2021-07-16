@@ -1,0 +1,54 @@
+$primary-color: blue;
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 6rem;
+    margin: 1rem 0;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+
+    input {
+      padding: 1rem 1rem;
+      outline-color: blue;
+      font-size: 1.5rem;
+    }
+  }
+  .form-group-checkbox {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+
+    input {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+
+      &[type="checkbox"] {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  button {
+    padding: 1rem 3rem;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: lighten($color: $primary-color, $amount: 20%);
+    }
+  }
+}

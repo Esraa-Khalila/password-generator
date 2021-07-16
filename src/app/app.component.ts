@@ -33,11 +33,11 @@ export class AppComponent {
     console.log(this.passwordLength);
   }
   onClick() {
-    const letters = 'ghdadfsf';
-    const numbers = '12358';
-    const symbols = '^%$#$@@';
+    const letters: string = 'ghdadfsf';
+    const numbers: string = '12358';
+    const symbols: string = '^%$#$@@';
 
-    let valid = '';
+    let valid: string = '';
 
     if (this.includeLetters) {
       valid += letters;
@@ -49,7 +49,7 @@ export class AppComponent {
       valid += symbols;
     }
 
-    let generatedPassword = '';
+    let generatedPassword: string = '';
 
     for (let i = 0; i < this.passwordLength; i++) {
       const index = Math.floor(Math.random() * valid.length);
