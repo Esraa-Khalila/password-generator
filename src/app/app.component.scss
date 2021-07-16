@@ -5,9 +5,15 @@ main {
   display: flex;
   justify-content: center;
 
+  .app {
+    border: solid 0.2rem rgb(46, 45, 45);
+    border-radius: 3rem;
+    padding: 9rem;
+    margin: 10rem;
+    background-color: rgb(255, 255, 255);
+  }
   h1 {
-    font-size: 6rem;
-    margin: 1rem 0;
+    font-size: 4rem;
   }
 
   .form-group {
